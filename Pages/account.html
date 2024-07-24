@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account | Flyplane</title>
+    <link rel="shortcut icon" href="../Images/favicon.PNG" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/components.css">
+    <link rel="stylesheet" href="../CSS/account.css">
+</head>
+
+<body>
+    <header class="header-section">
+        <div class="container">
+            <div class="header-wrapper">
+
+                <div class="header-left">
+                    <a href="../index.html" class="logo">
+                        <img src="../Images/company-logo.webp" alt="">
+                    </a>
+                </div>
+
+                <div class="header-right">
+
+                    <div class="header-mid-left">
+                        <nav class="header-navbar">
+                            <ul class="header-navbar-links">
+                                <li class="header-nav-link"><a href="../index.html">Home</a></li>
+                                <li class="header-nav-link"><a href="booking.html">Book</a></li>
+                                <li class="header-nav-link"><a href="about.html">About</a></li>
+                                <li class="header-nav-link"><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="header-mid-right">
+                        <a href="#" class="header-mid-right-icon active">
+                            <i class="fa-solid fa-user" title="Account"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="account-section">
+        <div class="container">
+            <div class="account-wrapper">
+                <div class="account-box">
+                    <div class="account-type">
+                        <div class="account-type-in active" id="account-type-left">Login</div>
+                        <div class="account-type-in" id="account-type-right">Signup</div>
+                    </div>
+
+                    <div class="account-type-login">
+                        <!-- Links to account.php -->
+                        <form class="account-form" action="../PHP/account.php" method="post">
+                            <div class="account-form-group">
+                                <label for="login-email">Email</label>
+                                <input type="email" id="login-email" name="login-email" required>
+                            </div>
+                            <div class="account-form-group">
+                                <label for="login-password">Password</label>
+                                <input type="password" id="login-password" name="login-password" required>
+                            </div>
+                            <div class="account-form-group last">
+                                <input type="checkbox" name="login-remeber" id="login-remember">
+                                <label for="login-remember">Remember me</label>
+                            </div>
+                            <button type="submit">Login</button>
+                            <p>Don't have an account? <span id="signup-type-change">Signup</span></p>
+                        </form>
+                    </div>
+                    <div class="account-type-signup hidden">
+                        <!-- Links to account.php -->
+                        <form class="account-form" action="../PHP/account.php" method="post">
+                            <div class="account-form-group">
+                                <label for="signup-email">Email</label>
+                                <input type="email" id="signup-email" name="signup-email" required>
+                            </div>
+                            <div class="account-form-group">
+                                <label for="login-email">Username</label>
+                                <input type="text" id="signup-username" name="signup-username" required>
+                            </div>
+                            <div class="account-form-group">
+                                <label for="login-password">Password</label>
+                                <input type="password" id="signup-con-password" name="signup-con-password" required>
+                            </div>
+                            <div class="account-form-group">
+                                <label for="login-password">Confirm Password</label>
+                                <input type="password" id="signup-con-password" name="signup-con-password" required>
+                            </div>
+                            <div class="account-form-group last">
+                                <input type="checkbox" name="signup-accept" id="signup-accept" required>
+                                <label for="signup-accept">Accept our terms and conditions.</label>
+                            </div>
+                            <button type="submit">Signup</button>
+                            <p>Already have an account? <span id="login-type-change">Login</span></p>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-top">
+                    <div class="footer-logo">
+                        <img src="../Images/company-footer-logo.webp" alt="">
+                    </div>
+                    <div class="footer-info">
+                        <p>Nullam ultrices tortor non diam ullamcorper auctor. In urna tellus, auctor sit amet est ut,
+                            scelerisque volutpat diam.</p>
+                    </div>
+                    <div class="footer-social-links">
+                        <ul class="footer-all-social-links">
+                            <li class="footer-social-link"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li class="footer-social-link"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                            <li class="footer-social-link"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li class="footer-social-link"><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-navbar">
+                        <ul class="footer-navbar-links">
+                            <li class="footer-nav-link"><a href="../index.html">Home</a></li>
+                            <li class="footer-nav-link"><a href="book.html">Book</a></li>
+                            <li class="footer-nav-link"><a href="about.html">About</a></li>
+                            <li class="footer-nav-link"><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <p>Copyright &copy; All rights reserved 2024.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../JS/account.js"></script>
+    <script src="https://kit.fontawesome.com/f6f6f3aa3e.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

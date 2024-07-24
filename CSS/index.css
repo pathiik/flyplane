@@ -1,0 +1,272 @@
+main.main-landing-section {
+    position: relative;
+}
+
+/* ---HERO SECTION START--- */
+section.main-hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("../Images/hero-image.webp");
+    background-size: cover;
+    background-position: center center;
+    padding: 8rem 0 10rem 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1.main-hero-title {
+    text-align: center;
+    width: 50%;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+p.main-hero-info {
+    text-align: center;
+    width: 50%;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+a.main-hero-button {
+    background-color: #fff;
+    text-decoration: none;
+    color: #1D2A3B;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    transition: 0.2s ease-in-out;
+}
+
+a.main-hero-button:hover {
+    background-color: #4657F0;
+    color: #fff;
+}
+/* ---HERO SECTION END--- */
+
+
+/* ---SEARCH SECTION START--- */
+section.main-search-section {
+    z-index: 1000;
+    background-size: contain;
+    background-position: center center; 
+    position: absolute;
+    width: 80%;
+    top: 39rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+form.main-search-form {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+div.main-search-form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.main-search-form-group label {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+div.main-search-input-box-wrapper {
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    border: 1px solid #747E8C;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input.main-search-form-input {
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    font-size: 1rem;
+    background: transparent;
+}
+
+select.main-search-form-select {
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #fff;
+    background: transparent;
+}
+
+button.main-search-form-button {
+    background-color: #4657F0;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+button.main-search-form-button:hover {
+    background-color: #1D2A3B;
+}
+/* ---SEARCH SECTION END--- */
+
+
+/* ---OFFER SECTION START--- */
+section.main-offer-section {
+    padding: 10rem 0 3rem 0;
+}
+
+div.main-offer-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+}
+
+h1.offer-title {
+    font-size: 3rem;
+    font-weight: 600;
+    position: relative;
+}
+
+h1.offer-title::before {
+    content: "";
+    display: block;
+    width: 5rem;
+    height: 0.2rem;
+    background-color: #4657F0;
+    position: absolute;
+    bottom: 0rem;
+}
+
+div.main-offers {
+    margin: 5rem 0;
+    display: flex;
+    gap: 3rem;
+}
+/* ---OFFER SECTION END--- */
+
+
+/* ---BENEFITS SECTION START--- */
+section.main-benefits-section {
+    margin-bottom: 5rem;
+}
+
+div.main-benefits-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+}
+
+div.main-benefits-cards {
+    margin: 4rem 0;
+    display: flex;
+    gap: 2rem;
+}
+
+div.benefit-title-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+div.benefit-title-box h4 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #1D2A3B;
+}
+
+div.benefit-info {
+    margin-top: 1rem;
+    color: #434343;
+}
+/* ---BENEFITS SECTION END--- */
+
+
+/* ---NEWS SECTION START--- */
+section.main-news-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}   
+
+div.main-news-left--news {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+div.aside-news a {
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+div.aside-news-left img {
+    width: 9rem;
+    border: 1px solid black;
+}
+
+div.aside-news:hover h4.aside-news-right--title {
+    color: #4657F0;
+}
+
+div.aside-news-right {
+    display: flex;
+    flex-direction: column;
+}
+
+p.aside-news-right--details {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    color: #747E8C;
+}
+
+h4.aside-news-right--title {
+    font-size: 1rem;
+    font-weight: 500;
+    width: 80%;
+}
+
+div.main-news-right {
+    display: flex;
+    gap: 2rem;
+}
+
+div.offer-card-details {
+    position: relative;
+}
+
+div.news-card-date {
+    position: absolute;
+    background-color: #4657F0;
+    padding: 5px 10px;
+    top: -1.5rem;
+    color: #fff;
+}
+/* ---NEWS SECTION END--- */
+
+
+

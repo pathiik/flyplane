@@ -1,0 +1,102 @@
+div.account-wrapper {
+    padding: 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.account-type {
+    display: flex;
+    align-items: center;
+    border: 1px solid #4657F0;
+    border-radius: 25px;
+}
+
+div.account-type-in {
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    width: 50%;
+    padding: 10px 20px;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+div.account-type-in:hover {
+    color: #4657F0;
+}
+
+div.account-type-in.active {
+    background-color: #4657F0;
+    color: #fff;
+}
+
+div.account-type-login.hidden {
+    display: none;
+}
+
+div.account-type-signup.hidden {
+    display: none;
+}
+
+form.account-form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+div.account-form-group {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #4657F0;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+div.account-form-group label {
+    color: #868484;
+    font-weight: 500;
+    font-size: 0.7rem;
+    margin-bottom: 5px;
+}
+
+div.account-form-group input {
+    border: none;
+    outline: none;
+}
+
+div.account-form-group.last {
+    display: block;
+    border: none;
+}
+
+form.account-form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background-color: #4657F0;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+form.account-form button:hover {
+    background-color: #3A4EDC;
+}
+
+form.account-form p span {
+    color: #4657F0;
+    cursor: pointer;
+}
+
+
