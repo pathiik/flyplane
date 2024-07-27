@@ -3,7 +3,8 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "flyplane";
+$dbname = "flyplane_contact";
+
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -20,7 +21,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars($_POST['message']);
 
     // Prepare and bind
-    $stmt = $conn->prepare("INSERT INTO contacts (name, email, message) VALUES (?, ?, ?)");
+
+    $stmt = $conn->prepare("INSERT INTO contact (name, email, message) VALUES (?, ?, ?)");
+
+
     $stmt->bind_param("sss", $name, $email, $message);
 
     // Execute the query
