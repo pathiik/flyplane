@@ -15,9 +15,9 @@ if ($conn->connect_error) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['signup-email'];
     $username = $_POST['signup-username'];
-    $password = $_POST['signup-con-password'];
-    $confirmPassword = $_POST['signup-con-password'];
-    //if the passwords are differente give an error and finish
+    $password = $_POST['signup-password'];
+    $confirmPassword = $_POST['signup-confirm-password'];
+    //if the passwords are different give an error and finish
     if ($password !== $confirmPassword) {
         echo "Passwords do not match.";
         exit();
