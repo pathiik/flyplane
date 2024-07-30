@@ -61,6 +61,13 @@ li.header-nav-link a:hover {
     color: #4657F0;
 }
 
+div.header-mid-right {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
 a.header-mid-right-icon {
     display: block;
     text-decoration: none;
