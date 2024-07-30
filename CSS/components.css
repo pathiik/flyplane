@@ -63,14 +63,15 @@ li.header-nav-link a:hover {
 
 div.header-mid-right {
     display: flex;
+    gap: 0.5rem;
     align-self: center;
     justify-content: center;
     overflow: hidden;
 }
 
-div.header-mid-right-icon span {
+div.header-mid-right span {
     display: block;
-    line-height: 1.9rem;
+    line-height: 2rem;
 }
 
 a.header-mid-right-icon {
