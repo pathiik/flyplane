@@ -40,7 +40,10 @@ session_start();
                         <!-- After the user logs in to the page, brings the userName and prints a welcome message to show that the user is logged in-->
                         <?php
                         if (isset($_SESSION['username'])) {
-                            echo "<span>Welcome, " . htmlspecialchars($_SESSION['username']) . "</span>";
+                            echo "<span>" . htmlspecialchars($_SESSION['username']) . "</span>";
+                            echo '<a href="Pages/account.html" class="header-mid-right-icon">
+                            <i class="fa-solid fa-user" title="Account"></i>
+                            </a>';
                         } else {
                             echo '<a href="Pages/account.html" class="header-mid-right-icon">
                             <i class="fa-solid fa-user" title="Account"></i>
