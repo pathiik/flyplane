@@ -1,9 +1,9 @@
 <?php
 // Database configuration
-$servername = "localhost";
+$servername = "localhost:3307";
 $username = "root";
 $password = "";
-$dbname = "flyplane_contact";
+$dbname = "flyplane";
 
 
 // Create connection
@@ -20,9 +20,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars($_POST['email']);
     $message = htmlspecialchars($_POST['message']);
 
+    mysqli_query($conn, "CREATE TABLE IF NOT EXISTS messageForm (
+        id INT(11) AUTO_INCREMENT PRIMARY KEY,
+        username VARCHAR(255),
+        userEmail VARCHAR(255) NOT NULL,
+        userMessage VARCHAR(1000) NOT NULL
+    )");
+
     // Prepare and bind
 
-    $stmt = $conn->prepare("INSERT INTO contact (name, email, message) VALUES (?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO messageForm (userName, userEmail, userMessage) VALUES (?, ?, ?)");
 
 
     $stmt->bind_param("sss", $name, $email, $message);
@@ -40,4 +47,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 } else {
     echo "Invalid request method.";
 }
-?>
