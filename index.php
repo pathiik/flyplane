@@ -14,7 +14,6 @@
     <header class="header-section">
         <div class="container">
             <div class="header-wrapper">
-
                 <div class="header-left">
                     <a href="index.html" class="logo">
                         <img src="Images/company-logo.webp" alt="">
@@ -22,7 +21,6 @@
                 </div>
 
                 <div class="header-right">
-
                     <div class="header-mid-left">
                         <nav class="header-navbar">
                             <ul class="header-navbar-links">
@@ -35,48 +33,49 @@
                     </div>
 
                     <div class="header-mid-right">
-                        <a href="Pages/account.html" class="header-mid-right-icon">
+                        <?php
+                        if (isset($_SESSION['username'])) {
+                            echo "<span>Welcome, " . htmlspecialchars($_SESSION['username']) . "</span>";
+                        } else {
+                            echo '<a href="Pages/account.html" class="header-mid-right-icon">
                             <i class="fa-solid fa-user" title="Account"></i>
-                        </a>
+                            </a>';
+                        }
+                        ?>
                     </div>
                 </div>
-
             </div>
         </div>
     </header>
 
     <main class="main-landing-section">
-
         <section class="main-hero-section">
             <h1 class="main-hero-title">Let's Make Your Best Trip Ever</h1>
             <p class="main-hero-info">Plan and book your perfect trip with expert advice, travel tips, destination
                 information and inspiration from us.</p>
-            <a href="" class="main-hero-button">Discover Now</a>
+            <a href="#" class="main-hero-button">Discover Now</a>
         </section>
 
         <section class="main-search-section">
-            <!-- Links to search.php -->
-            <form action="PHP/search.php" class="main-search-form" method="post">
+            <form class="main-search-form">
                 <div class="main-search-form-group">
-                    <label for="search" class="main-search-form-label">Where?</label>
+                    <label for="where-search" class="main-search-form-label">Where?</label>
                     <div class="main-search-input-box-wrapper">
-                        <input type="text" name="search" id="where-search" class="main-search-form-input"
-                            placeholder="Toronto, Ontario" required>
+                        <input type="text" name="where-search" id="where-search" class="main-search-form-input" placeholder="Toronto, Ontario">
                         <i class="fa-solid fa-location-dot"></i>
                     </div>
                 </div>
                 <div class="main-search-form-group">
-                    <label for="search" class="main-search-form-label">When?</label>
+                    <label for="when-search" class="main-search-form-label">When?</label>
                     <div class="main-search-input-box-wrapper">
-                        <input type="date" name="search" id="when-search" class="main-search-form-input"
-                            placeholder="04th September, 2024" required>
+                        <input type="date" name="when-search" id="when-search" class="main-search-form-input" placeholder="04th September, 2024">
                         <i class="fa-solid fa-calendar-days"></i>
                     </div>
                 </div>
                 <div class="main-search-form-group">
-                    <label for="search" class="main-search-form-label">How Many?</label>
+                    <label for="howmany-search" class="main-search-form-label">How Many?</label>
                     <div class="main-search-input-box-wrapper">
-                        <select name="quantity" id="howmany-search" class="main-search-form-select" required>
+                        <select name="howmany-search" id="howmany-search" class="main-search-form-select">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -87,8 +86,15 @@
                 </div>
                 <button type="submit" class="main-search-form-button">Search</button>
             </form>
-
+            <div class="main-search-result" id="main-search-result">
+                <h2 class="main-search-title">Search Result</h2>
+                <div class="main-search-content">
+                    <p class="main-search-top" id="search-top"></p>
+                    <p class="main-search-bottom">Sorry! No flights available at the moment.</p>
+                </div>
+            </div>
         </section>
+
         <div class="container">
             <section class="main-offer-section">
                 <div class="main-offer-info">
@@ -350,6 +356,7 @@
         </div>
     </footer>
 
+    <script src="JS/index.js"></script>
     <script src="https://kit.fontawesome.com/f6f6f3aa3e.js" crossorigin="anonymous"></script>
 </body>
 
