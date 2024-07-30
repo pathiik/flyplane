@@ -9,7 +9,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flyplane</title>
-    <link rel="shortcut icon" href="Images/favicon.PNG" type="image/x-icon">
+    <link rel="shortcut icon" href="../Images/favicon.PNG" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/components.css">
     <link rel="stylesheet" href="../CSS/index.css">
 </head>
@@ -20,7 +20,7 @@ session_start();
             <div class="header-wrapper">
                 <div class="header-left">
                     <a href="index.html" class="logo">
-                        <img src="Images/company-logo.webp" alt="">
+                        <img src="../Images/company-logo.webp" alt="">
                     </a>
                 </div>
 
@@ -41,11 +41,11 @@ session_start();
                         <?php
                         if (isset($_SESSION['username'])) {
                             echo "<span>" . htmlspecialchars($_SESSION['username']) . "</span>";
-                            echo '<a href="Pages/account.html" class="header-mid-right-icon">
+                            echo '<a href="../Pages/account.html" class="header-mid-right-icon">
                             <i class="fa-solid fa-user" title="Account"></i>
                             </a>';
                         } else {
-                            echo '<a href="Pages/account.html" class="header-mid-right-icon">
+                            echo '<a href="../Pages/account.html" class="header-mid-right-icon">
                             <i class="fa-solid fa-user" title="Account"></i>
                             </a>';
                         }
@@ -115,7 +115,7 @@ session_start();
                 <div class="main-offers">
                     <div class="offer-card">
                         <div class="offer-card-image">
-                            <img src="Images/offer1.webp" alt="">
+                            <img src="../Images/offer1.webp" alt="">
                         </div>
                         <div class="offer-card-details">
                             <div class="offer-card-title">
@@ -138,7 +138,7 @@ session_start();
                     </div>
                     <div class="offer-card">
                         <div class="offer-card-image">
-                            <img src="Images/offer3.webp" alt="">
+                            <img src="../Images/offer3.webp" alt="">
                         </div>
                         <div class="offer-card-details">
                             <div class="offer-card-title">
@@ -161,7 +161,7 @@ session_start();
                     </div>
                     <div class="offer-card">
                         <div class="offer-card-image">
-                            <img src="Images/offer3.webp" alt="">
+                            <img src="../Images/offer3.webp" alt="">
                         </div>
                         <div class="offer-card-details">
                             <div class="offer-card-title">
@@ -196,7 +196,7 @@ session_start();
                 <div class="main-benefits-cards">
                     <div class="benefit-card">
                         <div class="benefit-title-box">
-                            <img src="Images/benefit1.webp" alt="">
+                            <img src="../Images/benefit1.webp" alt="">
                             <h4>Personal Schedule</h4>
                         </div>
                         <div class="benefit-info">
@@ -207,7 +207,7 @@ session_start();
 
                     <div class="benefit-card">
                         <div class="benefit-title-box">
-                            <img src="Images/benefit2.webp" alt="">
+                            <img src="../Images/benefit2.webp" alt="">
                             <h4>Luxury Interiors</h4>
                         </div>
                         <div class="benefit-info">
@@ -218,7 +218,7 @@ session_start();
 
                     <div class="benefit-card">
                         <div class="benefit-title-box">
-                            <img src="Images/benefit3.webp" alt="">
+                            <img src="../Images/benefit3.webp" alt="">
                             <h4>Safe & Confidential</h4>
                         </div>
                         <div class="benefit-info">
@@ -229,7 +229,7 @@ session_start();
 
                     <div class="benefit-card">
                         <div class="benefit-title-box">
-                            <img src="Images/benefit4.webp" alt="">
+                            <img src="../Images/benefit4.webp" alt="">
                             <h4>Professional Crew</h4>
                         </div>
                         <div class="benefit-info">
@@ -248,7 +248,7 @@ session_start();
                         <div class="aside-news">
                             <a href="#">
                                 <div class="aside-news-left">
-                                    <img src="Images/offer2.webp" alt="">
+                                    <img src="../Images/offer2.webp" alt="">
                                 </div>
                                 <div class="aside-news-right">
                                     <p class="aside-news-right--details">Travel | By Admin</p>
@@ -260,7 +260,7 @@ session_start();
                         <div class="aside-news">
                             <a href="#">
                                 <div class="aside-news-left">
-                                    <img src="Images/offer3.webp" alt="">
+                                    <img src="../Images/offer3.webp" alt="">
                                 </div>
                                 <div class="aside-news-right">
                                     <p class="aside-news-right--details">Travel | By Admin</p>
@@ -272,7 +272,7 @@ session_start();
                         <div class="aside-news">
                             <a href="" id="">
                                 <div class="aside-news-left">
-                                    <img src="Images/news1.webp" alt="">
+                                    <img src="../Images/news1.webp" alt="">
                                 </div>
                                 <div class="aside-news-right">
                                     <p class="aside-news-right--details">Travel | By Admin</p>
@@ -286,7 +286,7 @@ session_start();
                 <div class="main-news-right">
                     <div class="offer-card">
                         <div class="offer-card-image">
-                            <img src="Images/news1.webp" alt="">
+                            <img src="../Images/news1.webp" alt="">
                         </div>
                         <div class="offer-card-details">
                             <div class="news-card-date">Sep 10, 2024</div>
@@ -306,7 +306,7 @@ session_start();
 
                     <div class="offer-card">
                         <div class="offer-card-image">
-                            <img src="Images/news2.webp" alt="">
+                            <img src="../Images/news2.webp" alt="">
                         </div>
                         <div class="offer-card-details">
                             <div class="news-card-date">Sep 10, 2024</div>
@@ -334,7 +334,7 @@ session_start();
             <div class="footer-wrapper">
                 <div class="footer-top">
                     <div class="footer-logo">
-                        <img src="Images/company-footer-logo.webp" alt="">
+                        <img src="../Images/company-footer-logo.webp" alt="">
                     </div>
                     <div class="footer-info">
                         <p>Nullam ultrices tortor non diam ullamcorper auctor. In urna tellus, auctor sit amet est ut,
@@ -364,7 +364,7 @@ session_start();
         </div>
     </footer>
 
-    <script src="JS/index.js"></script>
+    <script src="../JS/index.js"></script>
     <script src="https://kit.fontawesome.com/f6f6f3aa3e.js" crossorigin="anonymous"></script>
 </body>
 
