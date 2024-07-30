@@ -68,6 +68,11 @@ div.header-mid-right {
     overflow: hidden;
 }
 
+div.header-mid-right-icon span {
+    display: block;
+    line-height: 1.9rem;
+}
+
 a.header-mid-right-icon {
     display: block;
     text-decoration: none;
@@ -87,6 +92,7 @@ a.header-mid-right-icon.active i {
 a.header-mid-right-icon i:hover {
     color: #4657F0;
 }
+
 /* ---HEADER END--- */
 
 
@@ -189,6 +195,7 @@ div.footer-bottom p {
     font-size: 0.8rem;
     color: #747E8C;
 }
+
 /* ---FOOTER END--- */
 
 
@@ -216,7 +223,7 @@ div.offer-card-title a {
     color: #191B26;
 }
 
-div.offer-card-title h4{
+div.offer-card-title h4 {
     font-size: 1.3rem;
     font-weight: 500;
     margin-bottom: 0.5rem;
@@ -256,8 +263,5 @@ div.offer-card-left.news-card-info {
     letter-spacing: 0.1rem;
     text-transform: uppercase;
 }
+
 /* ---OFFER CARD END--- */
-
-
-
-
