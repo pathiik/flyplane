@@ -1,3 +1,7 @@
+<?php 
+session_start(); 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,6 +37,7 @@
                     </div>
 
                     <div class="header-mid-right">
+                        <!-- After the user logs in to the page, brings the userName and prints a welcome message to show that the user is logged in-->
                         <?php
                         if (isset($_SESSION['username'])) {
                             echo "<span>Welcome, " . htmlspecialchars($_SESSION['username']) . "</span>";
