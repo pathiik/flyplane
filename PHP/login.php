@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // If correct password sends the user to index and store the userName in a new variable to be used
             $_SESSION['username'] = $row['username'];
             // Sends the user to a new page
-            header('Location: ../index.php');
+            header('Location: index.php');
             exit();
             // If wrong password exits and prints message
         } else {
