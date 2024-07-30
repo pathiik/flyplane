@@ -10,8 +10,8 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flyplane</title>
     <link rel="shortcut icon" href="Images/favicon.PNG" type="image/x-icon">
-    <link rel="stylesheet" href="CSS/components.css">
-    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="../CSS/components.css">
+    <link rel="stylesheet" href="../CSS/index.css">
 </head>
 
 <body>
@@ -29,9 +29,9 @@ session_start();
                         <nav class="header-navbar">
                             <ul class="header-navbar-links">
                                 <li class="header-nav-link"><a class="active" href="#">Home</a></li>
-                                <li class="header-nav-link"><a href="Pages/booking.html">Book</a></li>
-                                <li class="header-nav-link"><a href="Pages/about.html">About</a></li>
-                                <li class="header-nav-link"><a href="Pages/contact.html">Contact</a></li>
+                                <li class="header-nav-link"><a href="../Pages/member.html">Book</a></li>
+                                <li class="header-nav-link"><a href="../Pages/about.html">About</a></li>
+                                <li class="header-nav-link"><a href="../Pages/contact.html">Contact</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -349,10 +349,10 @@ session_start();
                 <div class="footer-bottom">
                     <div class="footer-navbar">
                         <ul class="footer-navbar-links">
-                            <li class="footer-nav-link"><a class="active" href="">Home</a></li>
-                            <li class="footer-nav-link"><a href="">Book</a></li>
-                            <li class="footer-nav-link"><a href="">About</a></li>
-                            <li class="footer-nav-link"><a href="">Contact</a></li>
+                            <li class="footer-nav-link"><a class="active" href="#">Home</a></li>
+                            <li class="footer-nav-link"><a href="../Pages/member.html">Book</a></li>
+                            <li class="footer-nav-link"><a href="../Pages/about.html">About</a></li>
+                            <li class="footer-nav-link"><a href="../Pages/contact.html">Contact</a></li>
                         </ul>
                     </div>
                     <p>Copyright &copy; All rights reserved 2024.</p>
