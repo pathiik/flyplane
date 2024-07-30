@@ -19,7 +19,7 @@ session_start();
         <div class="container">
             <div class="header-wrapper">
                 <div class="header-left">
-                    <a href="index.html" class="logo">
+                    <a href="../index.html" class="logo">
                         <img src="../Images/company-logo.webp" alt="">
                     </a>
                 </div>
@@ -29,7 +29,7 @@ session_start();
                         <nav class="header-navbar">
                             <ul class="header-navbar-links">
                                 <li class="header-nav-link"><a class="active" href="#">Home</a></li>
-                                <li class="header-nav-link"><a href="../Pages/member.html">Book</a></li>
+                                <li class="header-nav-link"><a href="../Pages/member.html">Member</a></li>
                                 <li class="header-nav-link"><a href="../Pages/about.html">About</a></li>
                                 <li class="header-nav-link"><a href="../Pages/contact.html">Contact</a></li>
                             </ul>
