@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flyplane</title>
+    <link rel="shortcut icon" href="Images/favicon.PNG" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/components.css">
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+
+<body>
+    <header class="header-section">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="header-left">
+                    <a href="index.html" class="logo">
+                        <img src="Images/company-logo.webp" alt="">
+                    </a>
+                </div>
+
+                <div class="header-right">
+                    <div class="header-mid-left">
+                        <nav class="header-navbar">
+                            <ul class="header-navbar-links">
+                                <li class="header-nav-link"><a class="active" href="#">Home</a></li>
+                                <li class="header-nav-link"><a href="Pages/booking.html">Book</a></li>
+                                <li class="header-nav-link"><a href="Pages/about.html">About</a></li>
+                                <li class="header-nav-link"><a href="Pages/contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="header-mid-right">
+                        <!-- After the user logs in to the page, brings the userName and prints a welcome message to show that the user is logged in-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-landing-section">
+        <section class="main-hero-section">
+            <h1 class="main-hero-title">Let's Make Your Best Trip Ever</h1>
+            <p class="main-hero-info">Plan and book your perfect trip with expert advice, travel tips, destination
+                information and inspiration from us.</p>
+            <a href="#" class="main-hero-button">Discover Now</a>
+        </section>
+
+        <section class="main-search-section">
+            <form class="main-search-form">
+                <div class="main-search-form-group">
+                    <label for="where-search" class="main-search-form-label">Where?</label>
+                    <div class="main-search-input-box-wrapper">
+                        <input type="text" name="where-search" id="where-search" class="main-search-form-input" placeholder="Toronto, Ontario">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                </div>
+                <div class="main-search-form-group">
+                    <label for="when-search" class="main-search-form-label">When?</label>
+                    <div class="main-search-input-box-wrapper">
+                        <input type="date" name="when-search" id="when-search" class="main-search-form-input" placeholder="04th September, 2024">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                </div>
+                <div class="main-search-form-group">
+                    <label for="howmany-search" class="main-search-form-label">How Many?</label>
+                    <div class="main-search-input-box-wrapper">
+                        <select name="howmany-search" id="howmany-search" class="main-search-form-select">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="4+">4 +</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="main-search-form-button">Search</button>
+            </form>
+            <div class="main-search-result" id="main-search-result">
+                <h2 class="main-search-title">Search Result</h2>
+                <div class="main-search-content">
+                    <p class="main-search-top" id="search-top"></p>
+                    <p class="main-search-bottom">Sorry! No flights available at the moment.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <section class="main-offer-section">
+                <div class="main-offer-info">
+                    <h1 class="offer-title">Special Offers</h1>
+                    <p>Discover unbeatable deals with our flight booking website's special offers, featuring exclusive
+                        discounts on international and domestic flights. Book now and enjoy up to 50% off on selected
+                        routes, plus added perks like free seat selection and extra baggage allowance.</p>
+                </div>
+
+                <div class="main-offers">
+                    <div class="offer-card">
+                        <div class="offer-card-image">
+                            <img src="Images/offer1.webp" alt="">
+                        </div>
+                        <div class="offer-card-details">
+                            <div class="offer-card-title">
+                                <a href="#">
+                                    <h4>Known momument in the black hills of south</h4>
+                                </a>
+                            </div>
+                            <div class="offer-card-info">
+                                <div class="offer-card-left">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Toronto, Ontario
+                                </div>
+                                <div class="offer-card-right">
+                                    <div class="offer-price-box">
+                                        <p>$120</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offer-card">
+                        <div class="offer-card-image">
+                            <img src="Images/offer3.webp" alt="">
+                        </div>
+                        <div class="offer-card-details">
+                            <div class="offer-card-title">
+                                <a href="#">
+                                    <h4>Known momument in the black hills of south</h4>
+                                </a>
+                            </div>
+                            <div class="offer-card-info">
+                                <div class="offer-card-left">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Toronto, Ontario
+                                </div>
+                                <div class="offer-card-right">
+                                    <div class="offer-price-box">
+                                        <p>$120</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offer-card">
+                        <div class="offer-card-image">
+                            <img src="Images/offer3.webp" alt="">
+                        </div>
+                        <div class="offer-card-details">
+                            <div class="offer-card-title">
+                                <a href="#">
+                                    <h4>Known momument in the black hills of south</h4>
+                                </a>
+                            </div>
+                            <div class="offer-card-info">
+                                <div class="offer-card-left">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Toronto, Ontario
+                                </div>
+                                <div class="offer-card-right">
+                                    <div class="offer-price-box">
+                                        <p>$120</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="main-benefits-section">
+                <div class="main-benefits-info">
+                    <h1 class="offer-title">Our Benefit</h1>
+                    <p>Discover unbeatable deals with our flight booking website's special offers, featuring exclusive
+                        discounts on international and domestic flights. Book now and enjoy up to 50% off on selected
+                        routes, plus added perks like free seat selection and extra baggage allowance.</p>
+                </div>
+                <div class="main-benefits-cards">
+                    <div class="benefit-card">
+                        <div class="benefit-title-box">
+                            <img src="Images/benefit1.webp" alt="">
+                            <h4>Personal Schedule</h4>
+                        </div>
+                        <div class="benefit-info">
+                            <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                                letters, making it look like readable English.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-title-box">
+                            <img src="Images/benefit2.webp" alt="">
+                            <h4>Luxury Interiors</h4>
+                        </div>
+                        <div class="benefit-info">
+                            <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                                letters, making it look like readable English.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-title-box">
+                            <img src="Images/benefit3.webp" alt="">
+                            <h4>Safe & Confidential</h4>
+                        </div>
+                        <div class="benefit-info">
+                            <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                                letters, making it look like readable English.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-title-box">
+                            <img src="Images/benefit4.webp" alt="">
+                            <h4>Professional Crew</h4>
+                        </div>
+                        <div class="benefit-info">
+                            <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                                letters, making it look like readable English.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="main-news-section">
+                <div class="main-news-left">
+                    <h1 class="offer-title">News Latest</h1>
+                    <div class="main-news-left--news">
+                        <div class="aside-news">
+                            <a href="#">
+                                <div class="aside-news-left">
+                                    <img src="Images/offer2.webp" alt="">
+                                </div>
+                                <div class="aside-news-right">
+                                    <p class="aside-news-right--details">Travel | By Admin</p>
+                                    <h4 class="aside-news-right--title">The point of using Lorem Ipsum is that it has...
+                                    </h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="aside-news">
+                            <a href="#">
+                                <div class="aside-news-left">
+                                    <img src="Images/offer3.webp" alt="">
+                                </div>
+                                <div class="aside-news-right">
+                                    <p class="aside-news-right--details">Travel | By Admin</p>
+                                    <h4 class="aside-news-right--title">The point of using Lorem Ipsum is that it has...
+                                    </h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="aside-news">
+                            <a href="" id="">
+                                <div class="aside-news-left">
+                                    <img src="Images/news1.webp" alt="">
+                                </div>
+                                <div class="aside-news-right">
+                                    <p class="aside-news-right--details">Travel | By Admin</p>
+                                    <h4 class="aside-news-right--title">The point of using Lorem Ipsum is that it has...
+                                    </h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-news-right">
+                    <div class="offer-card">
+                        <div class="offer-card-image">
+                            <img src="Images/news1.webp" alt="">
+                        </div>
+                        <div class="offer-card-details">
+                            <div class="news-card-date">Sep 10, 2024</div>
+                            <div class="offer-card-info">
+                                <div class="offer-card-left news-card-info">
+                                    Travel | By Admin
+                                </div>
+                            </div>
+                            <div class="offer-card-title">
+                                <a href="#">
+                                    <h4>The point of using Lorem Ipsum is that it has...
+                                    </h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="offer-card">
+                        <div class="offer-card-image">
+                            <img src="Images/news2.webp" alt="">
+                        </div>
+                        <div class="offer-card-details">
+                            <div class="news-card-date">Sep 10, 2024</div>
+                            <div class="offer-card-info">
+                                <div class="offer-card-left news-card-info">
+                                    Travel | By Admin
+                                </div>
+                            </div>
+                            <div class="offer-card-title">
+                                <a href="#">
+                                    <h4>The point of using Lorem Ipsum is that it has...
+                                    </h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-top">
+                    <div class="footer-logo">
+                        <img src="Images/company-footer-logo.webp" alt="">
+                    </div>
+                    <div class="footer-info">
+                        <p>Nullam ultrices tortor non diam ullamcorper auctor. In urna tellus, auctor sit amet est ut,
+                            scelerisque volutpat diam.</p>
+                    </div>
+                    <div class="footer-social-links">
+                        <ul class="footer-all-social-links">
+                            <li class="footer-social-link"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li class="footer-social-link"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                            <li class="footer-social-link"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li class="footer-social-link"><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-navbar">
+                        <ul class="footer-navbar-links">
+                            <li class="footer-nav-link"><a class="active" href="">Home</a></li>
+                            <li class="footer-nav-link"><a href="">Book</a></li>
+                            <li class="footer-nav-link"><a href="">About</a></li>
+                            <li class="footer-nav-link"><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                    <p>Copyright &copy; All rights reserved 2024.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/index.js"></script>
+    <script src="https://kit.fontawesome.com/f6f6f3aa3e.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
