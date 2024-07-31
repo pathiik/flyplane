@@ -3,7 +3,7 @@
 session_start();
 
 // Connecting to the database
-$serverName = 'localhost:3307';
+$serverName = 'localhost';
 $userName = 'root';
 $password = '';
 $dbname = 'flyplane';

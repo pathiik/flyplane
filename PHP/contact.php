@@ -1,6 +1,6 @@
 <?php
 // Database configuration
-$servername = "localhost:3307";
+$servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "flyplane";

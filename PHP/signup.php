@@ -2,10 +2,10 @@
 //start new session
 session_start();
 
-$serverName = 'localhost:3307';
+$serverName = 'localhost';
 $userName = 'root';
 $password = '';
-$dbname = 'flyplane';
+$dbname = 'php';
 
 $conn = mysqli_connect($serverName, $userName, $password, $dbname);
 if ($conn->connect_error) {
