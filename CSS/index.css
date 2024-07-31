@@ -268,5 +268,30 @@ div.news-card-date {
 }
 /* ---NEWS SECTION END--- */
 
+/* ---SEARCH FORM RESULTS--- */
+div.main-search-result {
+    display: none;
+    text-align: center;
+    margin: 1rem 0;
+}
 
+div.main-search-result.visible {
+    display: block;
+}
+
+div.main-search-result h2.main-search-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #4657F0;
+    margin-bottom: 0.5rem;
+}
+
+div.main-search-result p.main-search-info {
+    font-size: 1rem;
+    color: #747E8C;
+}
+
+div.main-search-result div.main-search-content {
+    color: #434343;
+}
 

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Flyplane</title>
+    <link rel="shortcut icon" href="../Images/favicon.PNG" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/components.css">
+    <link rel="stylesheet" href="../CSS/member.css">
+</head>
+
+<body>
+    <header class="header-section">
+        <div class="container">
+            <div class="header-wrapper">
+
+                <div class="header-left">
+                    <a href="../index.html" class="logo">
+                        <img src="../Images/company-logo.webp" alt="">
+                    </a>
+                </div>
+
+                <div class="header-right">
+
+                    <div class="header-mid-left">
+                        <nav class="header-navbar">
+                            <ul class="header-navbar-links">
+                                <li class="header-nav-link"><a href="../index.html">Home</a></li>
+                                <li class="header-nav-link"><a class="active" href="#">Member</a></li>
+                                <li class="header-nav-link"><a href="about.html">About</a></li>
+                                <li class="header-nav-link"><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="header-mid-right">
+                        <a href="account.html" class="header-mid-right-icon">
+                            <i class="fa-solid fa-user" title="Account"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="member-section">
+        <div class="container">
+            <div class="member-section-wrapper">
+                <h1>Become a member</h1>
+                <form action="" class="membership-form">
+                    <div class="membership-form-group">
+                        <input type="text" class="member-full-name member-info" placeholder="Full Name" required>
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <div class="membership-form-group">
+                        <input type="text" class="member-name-on-card member-info" placeholder="Name on Card" required>
+                        <i class="fa fa-credit-card"></i>
+                    </div>
+                    <div class="membership-form-group">
+                        <input type="email" class="member-email member-info" placeholder="Email Address" required>
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                    <div class="membership-form-group">
+                        <input type="text" class="member-address member-info" placeholder="Address" required>
+                        <i class="fa fa-map-marker"></i>
+                    </div>
+                    <div class="membership-form-group">
+                        <input type="text" class="member-city member-info" placeholder="City" required>
+                        <i class="fa fa-institution"></i>
+                    </div>
+
+                    <!-- DOB & Gender -->
+                    <div class="membership-form-group">
+                        <input type="date" class="member-info" name="member-dob" required>
+                        <i class="fa fa-calendar icon"></i>
+                        <i>DOB</i>
+                    </div>
+                    <div class="membership-form-group">
+                        <input type="radio" class="member-gender" name="member-gender" id="gender-m" required>
+                        <label for="gender-m" class="">Male</label>
+                        <input type="radio" class="member-gender" id="gender-f" name="member-gender" required>
+                        <label for="gender-f" class="member-gender-text">Female</label>
+                        <i class="fa-solid fa-person-half-dress"></i>
+                        <i class="member-gender-text">Gender</i>
+                    </div>
+
+                    <!-- Payment Details -->
+                    <div class="membership-form-group">
+                        <input type="radio" name="member-payment-type" class="member-payment-type" id="credit-payment-type">
+                        <label for="credit-payment-type">
+                            <span class="payment-type-content">
+                                <i class="fa fa-cc-visa"></i> Credit Card
+                            </span>
+                        </label>
+                        <input type="radio" name="member-payment-type" class="member-payment-type" id="debit-payment-type">
+                        <label for="debit-payment-type">
+                            <span class="payment-type-content">
+                                <i class="fa fa-cc-paypal"></i> Debit Card
+                            </span>
+                        </label>
+                    </div>
+                    <div class="membership-form-group">
+                        <input type="tel" class="member-card-number member-info" placeholder="Card Number 1111-2222-3333-4444" required>
+                        <i class="fa fa-credit-card icon"></i>
+                    </div>
+                    <div class="membership-form-group">
+                        <input type="tel" class="member-card-cvc member-info" placeholder="Card CVC 123" required>
+                        <i class="fa-solid fa-key"></i>
+                    </div>
+                    <div class="membership-form-group">
+                        <input type="tel" class="member-card-expiry member-info" placeholder="Card Expiry MM/YY" required>
+                        <i class="fa fa-calendar icon"></i>
+                    </div>
+                    <div class="membership-form-group">
+                        <input type="tel" class="member-amount member-info" placeholder="Amount" required>
+                        <i class="fa-solid fa-money-bill"></i>
+                    </div>
+
+                    <button type="submit" class="membership-form-submit-button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-top">
+                    <div class="footer-logo">
+                        <img src="../Images/company-footer-logo.webp" alt="">
+                    </div>
+                    <div class="footer-info">
+                        <p>Nullam ultrices tortor non diam ullamcorper auctor. In urna tellus, auctor sit amet est ut,
+                            scelerisque volutpat diam.</p>
+                    </div>
+                    <div class="footer-social-links">
+                        <ul class="footer-all-social-links">
+                            <li class="footer-social-link"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li class="footer-social-link"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                            <li class="footer-social-link"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li class="footer-social-link"><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-navbar">
+                        <ul class="footer-navbar-links">
+                            <li class="footer-nav-link"><a href="../index.html">Home</a></li>
+                            <li class="footer-nav-link"><a class="active" href="#">Member</a></li>
+                            <li class="footer-nav-link"><a href="about.html">About</a></li>
+                            <li class="footer-nav-link"><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <p>Copyright &copy; All rights reserved 2024.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/f6f6f3aa3e.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

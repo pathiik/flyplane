@@ -61,6 +61,19 @@ li.header-nav-link a:hover {
     color: #4657F0;
 }
 
+div.header-mid-right {
+    display: flex;
+    gap: 0.5rem;
+    align-self: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+div.header-mid-right span {
+    display: block;
+    line-height: 2rem;
+}
+
 a.header-mid-right-icon {
     display: block;
     text-decoration: none;
@@ -80,6 +93,7 @@ a.header-mid-right-icon.active i {
 a.header-mid-right-icon i:hover {
     color: #4657F0;
 }
+
 /* ---HEADER END--- */
 
 
@@ -182,6 +196,7 @@ div.footer-bottom p {
     font-size: 0.8rem;
     color: #747E8C;
 }
+
 /* ---FOOTER END--- */
 
 
@@ -209,7 +224,7 @@ div.offer-card-title a {
     color: #191B26;
 }
 
-div.offer-card-title h4{
+div.offer-card-title h4 {
     font-size: 1.3rem;
     font-weight: 500;
     margin-bottom: 0.5rem;
@@ -249,8 +264,5 @@ div.offer-card-left.news-card-info {
     letter-spacing: 0.1rem;
     text-transform: uppercase;
 }
+
 /* ---OFFER CARD END--- */
-
-
-
-

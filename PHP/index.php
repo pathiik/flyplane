@@ -1,4 +1,3 @@
-<!--we added the php to the page-->
 <?php 
 session_start(); 
 ?>
@@ -10,7 +9,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flyplane</title>
-    <link rel="shortcut icon" href="Images/favicon.PNG" type="image/x-icon">
+    <link rel="shortcut icon" href="../Images/favicon.PNG" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/components.css">
     <link rel="stylesheet" href="../CSS/index.css">
 </head>
@@ -19,76 +18,72 @@ session_start();
     <header class="header-section">
         <div class="container">
             <div class="header-wrapper">
-
                 <div class="header-left">
-                    <a href="index.html" class="logo">
-                        <img src="Images/company-logo.webp" alt="">
+                    <a href="../index.html" class="logo">
+                        <img src="../Images/company-logo.webp" alt="">
                     </a>
                 </div>
 
                 <div class="header-right">
-
                     <div class="header-mid-left">
                         <nav class="header-navbar">
                             <ul class="header-navbar-links">
                                 <li class="header-nav-link"><a class="active" href="#">Home</a></li>
-                                <li class="header-nav-link"><a href="Pages/booking.html">Book</a></li>
-                                <li class="header-nav-link"><a href="Pages/about.html">About</a></li>
-                                <li class="header-nav-link"><a href="Pages/contact.html">Contact</a></li>
+                                <li class="header-nav-link"><a href="../Pages/member.html">Member</a></li>
+                                <li class="header-nav-link"><a href="../Pages/about.html">About</a></li>
+                                <li class="header-nav-link"><a href="../Pages/contact.html">Contact</a></li>
                             </ul>
                         </nav>
                     </div>
 
                     <div class="header-mid-right">
-        <!--after the user logs in the page brings the userName and prints a Welcome message to show that the user is logged-->
-                    <?php
-                    if (isset($_SESSION['username'])) {
-                    echo "<span>Welcome, " . htmlspecialchars($_SESSION['username']) . "</span>";
-                    } else {
-                    echo '<a href="Pages/account.html" class="header-mid-right-icon">
-                    <i class="fa-solid fa-user" title="Account"></i>
-                    </a>';
-                    }
-                    ?>
+                        <!-- After the user logs in to the page, brings the userName and prints a welcome message to show that the user is logged in-->
+                        <?php
+                        if (isset($_SESSION['username'])) {
+                            echo "<span>" . htmlspecialchars($_SESSION['username']) . "</span>";
+                            echo '<a href="../Pages/account.html" class="header-mid-right-icon">
+                            <i class="fa-solid fa-user" title="Account"></i>
+                            </a>';
+                        } else {
+                            echo '<a href="../Pages/account.html" class="header-mid-right-icon">
+                            <i class="fa-solid fa-user" title="Account"></i>
+                            </a>';
+                        }
+                        ?>
+                    </div>
                 </div>
-                </div>
-
             </div>
         </div>
     </header>
 
     <main class="main-landing-section">
-
         <section class="main-hero-section">
             <h1 class="main-hero-title">Let's Make Your Best Trip Ever</h1>
             <p class="main-hero-info">Plan and book your perfect trip with expert advice, travel tips, destination
                 information and inspiration from us.</p>
-            <a href="" class="main-hero-button">Discover Now</a>
+            <a href="#" class="main-hero-button">Discover Now</a>
         </section>
 
         <section class="main-search-section">
-            <!-- Links to search.php -->
-            <form action="PHP/search.php" class="main-search-form" method="post">
+            <form class="main-search-form">
                 <div class="main-search-form-group">
-                    <label for="search" class="main-search-form-label">Where?</label>
+                    <label for="where-search" class="main-search-form-label">Where?</label>
                     <div class="main-search-input-box-wrapper">
-                        <input type="text" name="search" id="where-search" class="main-search-form-input"
-                            placeholder="Toronto, Ontario" required>
+                        <input type="text" name="where-search" id="where-search" class="main-search-form-input" placeholder="Toronto, Ontario">
                         <i class="fa-solid fa-location-dot"></i>
                     </div>
                 </div>
                 <div class="main-search-form-group">
-                    <label for="search" class="main-search-form-label">When?</label>
+                    <label for="when-search" class="main-search-form-label">When?</label>
                     <div class="main-search-input-box-wrapper">
-                        <input type="date" name="search" id="when-search" class="main-search-form-input"
-                            placeholder="04th September, 2024" required>
+                        <input type="date" name="when-search" id="when-search" class="main-search-form-input" placeholder="04th September, 2024">
                         <i class="fa-solid fa-calendar-days"></i>
                     </div>
                 </div>
                 <div class="main-search-form-group">
-                    <label for="search" class="main-search-form-label">How Many?</label>
+                    <label for="howmany-search" class="main-search-form-label">How Many?</label>
                     <div class="main-search-input-box-wrapper">
-                        <select name="quantity" id="howmany-search" class="main-search-form-select" required>
+                        <select name="howmany-search" id="howmany-search" class="main-search-form-select">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -99,8 +94,15 @@ session_start();
                 </div>
                 <button type="submit" class="main-search-form-button">Search</button>
             </form>
-
+            <div class="main-search-result" id="main-search-result">
+                <h2 class="main-search-title">Search Result</h2>
+                <div class="main-search-content">
+                    <p class="main-search-top" id="search-top"></p>
+                    <p class="main-search-bottom">Sorry! No flights available at the moment.</p>
+                </div>
+            </div>
         </section>
+
         <div class="container">
             <section class="main-offer-section">
                 <div class="main-offer-info">
@@ -113,7 +115,7 @@ session_start();
                 <div class="main-offers">
                     <div class="offer-card">
                         <div class="offer-card-image">
-                            <img src="Images/offer1.webp" alt="">
+                            <img src="../Images/offer1.webp" alt="">
                         </div>
                         <div class="offer-card-details">
                             <div class="offer-card-title">
@@ -136,7 +138,7 @@ session_start();
                     </div>
                     <div class="offer-card">
                         <div class="offer-card-image">
-                            <img src="Images/offer3.webp" alt="">
+                            <img src="../Images/offer3.webp" alt="">
                         </div>
                         <div class="offer-card-details">
                             <div class="offer-card-title">
@@ -159,7 +161,7 @@ session_start();
                     </div>
                     <div class="offer-card">
                         <div class="offer-card-image">
-                            <img src="Images/offer3.webp" alt="">
+                            <img src="../Images/offer3.webp" alt="">
                         </div>
                         <div class="offer-card-details">
                             <div class="offer-card-title">
@@ -194,7 +196,7 @@ session_start();
                 <div class="main-benefits-cards">
                     <div class="benefit-card">
                         <div class="benefit-title-box">
-                            <img src="Images/benefit1.webp" alt="">
+                            <img src="../Images/benefit1.webp" alt="">
                             <h4>Personal Schedule</h4>
                         </div>
                         <div class="benefit-info">
@@ -205,7 +207,7 @@ session_start();
 
                     <div class="benefit-card">
                         <div class="benefit-title-box">
-                            <img src="Images/benefit2.webp" alt="">
+                            <img src="../Images/benefit2.webp" alt="">
                             <h4>Luxury Interiors</h4>
                         </div>
                         <div class="benefit-info">
@@ -216,7 +218,7 @@ session_start();
 
                     <div class="benefit-card">
                         <div class="benefit-title-box">
-                            <img src="Images/benefit3.webp" alt="">
+                            <img src="../Images/benefit3.webp" alt="">
                             <h4>Safe & Confidential</h4>
                         </div>
                         <div class="benefit-info">
@@ -227,7 +229,7 @@ session_start();
 
                     <div class="benefit-card">
                         <div class="benefit-title-box">
-                            <img src="Images/benefit4.webp" alt="">
+                            <img src="../Images/benefit4.webp" alt="">
                             <h4>Professional Crew</h4>
                         </div>
                         <div class="benefit-info">
@@ -246,7 +248,7 @@ session_start();
                         <div class="aside-news">
                             <a href="#">
                                 <div class="aside-news-left">
-                                    <img src="Images/offer2.webp" alt="">
+                                    <img src="../Images/offer2.webp" alt="">
                                 </div>
                                 <div class="aside-news-right">
                                     <p class="aside-news-right--details">Travel | By Admin</p>
@@ -258,7 +260,7 @@ session_start();
                         <div class="aside-news">
                             <a href="#">
                                 <div class="aside-news-left">
-                                    <img src="Images/offer3.webp" alt="">
+                                    <img src="../Images/offer3.webp" alt="">
                                 </div>
                                 <div class="aside-news-right">
                                     <p class="aside-news-right--details">Travel | By Admin</p>
@@ -270,7 +272,7 @@ session_start();
                         <div class="aside-news">
                             <a href="" id="">
                                 <div class="aside-news-left">
-                                    <img src="Images/news1.webp" alt="">
+                                    <img src="../Images/news1.webp" alt="">
                                 </div>
                                 <div class="aside-news-right">
                                     <p class="aside-news-right--details">Travel | By Admin</p>
@@ -284,7 +286,7 @@ session_start();
                 <div class="main-news-right">
                     <div class="offer-card">
                         <div class="offer-card-image">
-                            <img src="Images/news1.webp" alt="">
+                            <img src="../Images/news1.webp" alt="">
                         </div>
                         <div class="offer-card-details">
                             <div class="news-card-date">Sep 10, 2024</div>
@@ -304,7 +306,7 @@ session_start();
 
                     <div class="offer-card">
                         <div class="offer-card-image">
-                            <img src="Images/news2.webp" alt="">
+                            <img src="../Images/news2.webp" alt="">
                         </div>
                         <div class="offer-card-details">
                             <div class="news-card-date">Sep 10, 2024</div>
@@ -332,7 +334,7 @@ session_start();
             <div class="footer-wrapper">
                 <div class="footer-top">
                     <div class="footer-logo">
-                        <img src="Images/company-footer-logo.webp" alt="">
+                        <img src="../Images/company-footer-logo.webp" alt="">
                     </div>
                     <div class="footer-info">
                         <p>Nullam ultrices tortor non diam ullamcorper auctor. In urna tellus, auctor sit amet est ut,
@@ -350,10 +352,10 @@ session_start();
                 <div class="footer-bottom">
                     <div class="footer-navbar">
                         <ul class="footer-navbar-links">
-                            <li class="footer-nav-link"><a class="active" href="">Home</a></li>
-                            <li class="footer-nav-link"><a href="">Book</a></li>
-                            <li class="footer-nav-link"><a href="">About</a></li>
-                            <li class="footer-nav-link"><a href="">Contact</a></li>
+                            <li class="footer-nav-link"><a class="active" href="#">Home</a></li>
+                            <li class="footer-nav-link"><a href="../Pages/member.html">Book</a></li>
+                            <li class="footer-nav-link"><a href="../Pages/about.html">About</a></li>
+                            <li class="footer-nav-link"><a href="../Pages/contact.html">Contact</a></li>
                         </ul>
                     </div>
                     <p>Copyright &copy; All rights reserved 2024.</p>
@@ -362,6 +364,7 @@ session_start();
         </div>
     </footer>
 
+    <script src="../JS/index.js"></script>
     <script src="https://kit.fontawesome.com/f6f6f3aa3e.js" crossorigin="anonymous"></script>
 </body>
 
